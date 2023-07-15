@@ -1,1 +1,16 @@
-Pivot columns using dax 
+# Add columns with values to pivot tables
+
+1. Additional tables to pivot table
+2. Right click table icon to Add Measure
+3. Enter Dax formula below (replacing "column_name"):
+
+    =CONCATENATEX(Values(Table1[column_name]), Table1[column_name], ",")
+
+
+# Add columns with no values to pivot tables. This is used when additoinal columns are needed to align vertical data i.e. forms
+
+1. Additional tables to pivot table
+2. Right click table icon to Add Measure
+3. Enter Dax formula below (replacing "column_name"):
+
+    =""
